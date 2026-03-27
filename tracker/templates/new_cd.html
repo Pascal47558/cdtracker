@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid" style="margin: 3%;">
+    <h1>Add CD</h1>
+</div>
+
+<div class="container-fluid" style="margin: 3%;">
+    <form action='{% url "NewCD"%}' method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button name="submit">Add cd</button>
+    </form>
+</div>
+
+{% endblock content %}

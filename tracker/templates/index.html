@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid" style="margin: 3%;">
+    <h1>CD Tracker!</h1>
+    <p>Your own personal CD Tracker</p>
+    <p ><a class="btn btn-light" href="{% url 'NewCD' %}">Add CD</a></p>
+</div>
+
+{% if query != null %}
+<div class="container-fluid" style="margin: 3%;">
+    <p><b>Search: {{query}}</b></p>
+</div>
+{% endif %}
+
+
+<div class="container-fluid" style="margin: 3%;">
+    <h2>CDs</h2>
+    <ul id="CDs">
+        {% for CD in CDs %}
+            <li>{{CD.band}}: {{CD.album}}</li>
+        {% empty %}
+            <li>No CDs found</li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock content %}
