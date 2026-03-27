@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # User Added
     "tracker.apps.TrackerConfig",
+    "django.contrib.staticfiles",
 
     # Default
     'django.contrib.admin',
