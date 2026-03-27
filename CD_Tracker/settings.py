@@ -33,7 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # User Added
     "tracker.apps.TrackerConfig",
-    "django.contrib.staticfiles",
+    "debug_toolbar",
 
     # Default
     'django.contrib.admin',
@@ -45,6 +45,10 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    # User added
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
+
+    # Default
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -125,3 +129,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# User Added
+
+INTERNAL_IPS = [
+    "127.0.0.1"
+]
