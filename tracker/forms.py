@@ -5,5 +5,9 @@ from .models import CD
 class CD_Form(forms.ModelForm):
     class Meta:
         model = CD
-        fields = ['band', 'album']
-        labels = {"album": "Album", "band": "Band"}
+        fields = ['band', 'album', 'other',]
+        labels = {"album": "Album", "band": "Band", 'other': 'Other',}
+        widgets = {
+            'other': forms.Textarea(attrs={'rows': 2, 'cols': 25}),
+        }
+
