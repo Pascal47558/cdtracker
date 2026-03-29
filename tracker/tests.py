@@ -23,8 +23,10 @@ class WebRequestTest(TestCase):
         response = self.client.get("/notarealpage")
 
         self.assertEqual(response.status_code, 404)
+        # Do not add a contains as this will mess with the tests
 
     def test_itemNotFound(self):
         response = self.client.get("cd/13241322134")
 
         self.assertEqual(response.status_code, 404)
+        # Do not add a contains as this will mess with the tests
