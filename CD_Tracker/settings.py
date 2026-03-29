@@ -36,7 +36,7 @@ ALLOWED_HOSTS = [
 INSTALLED_APPS = [
     # User Added
     "tracker.apps.TrackerConfig",
-    #"debug_toolbar",
+    "debug_toolbar",
 
     # Default
     'django.contrib.admin',
@@ -49,7 +49,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     # User added
-    #"debug_toolbar.middleware.DebugToolbarMiddleware",
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
 
     # Default
     'django.middleware.security.SecurityMiddleware',
