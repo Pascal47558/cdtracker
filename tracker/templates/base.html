@@ -15,7 +15,7 @@
                     <li class="nav-item">
                         <form method="GET" action="{% url 'search' %}">
                             <input type="text" name="q" value="{{ query|default_if_none:'' }}" placeholder="Search">
-                            <button type="submit">Search</button>
+                            <button type="submit" class="btn-secondary btn">Search</button>
                         </form>
                     </li>
                 </ul>

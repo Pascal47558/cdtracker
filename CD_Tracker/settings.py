@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "fuzzbert",
     "192.168.86.43",
+    "localhost",
 ]
 
 

@@ -9,7 +9,7 @@
     <form action='{% url "NewCD"%}' method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button name="submit">Add cd</button>
+        <button name="submit" class="btn-light btn">Add cd</button>
     </form>
 </div>
 
