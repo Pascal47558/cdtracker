@@ -1,0 +1,362 @@
+[
+{
+    "model": "tracker.cd",
+    "pk": 1,
+    "fields": {
+        "band": "Hem",
+        "album": "Rabbit Songs"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 2,
+    "fields": {
+        "band": "The Fire Theft",
+        "album": ""
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 3,
+    "fields": {
+        "band": "The Police",
+        "album": "Every Breath You Take"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 4,
+    "fields": {
+        "band": "Tom Petty",
+        "album": "Greatest Hits"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 5,
+    "fields": {
+        "band": "Pete Yorn",
+        "album": "Music For The Morning After"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 6,
+    "fields": {
+        "band": "Radio Head",
+        "album": "OK Computer"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 7,
+    "fields": {
+        "band": "Yonder Mountain String Band",
+        "album": "Town By Town"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 8,
+    "fields": {
+        "band": "Microsoft",
+        "album": "Windows XP"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 9,
+    "fields": {
+        "band": "The Garden State Soundtrack",
+        "album": ""
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 10,
+    "fields": {
+        "band": "Rolling Stones",
+        "album": "Hot Rocks 2"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 11,
+    "fields": {
+        "band": "Mannheim Steamroller",
+        "album": "Christmas Extraodinaire"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 12,
+    "fields": {
+        "band": "Radiohead",
+        "album": "Amnesiac"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 13,
+    "fields": {
+        "band": "Carole King",
+        "album": "Really Rosie"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 14,
+    "fields": {
+        "band": "The American Analog Set",
+        "album": "Know by Heart"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 15,
+    "fields": {
+        "band": "Lucinda W.",
+        "album": "Car Wheels + one"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 16,
+    "fields": {
+        "band": "DJ Shadow",
+        "album": "Endtroducing"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 17,
+    "fields": {
+        "band": "Tori Amos",
+        "album": "To Venus And Back"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 18,
+    "fields": {
+        "band": "Ani",
+        "album": "Revelling"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 19,
+    "fields": {
+        "band": "Ani",
+        "album": "Reckoning"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 20,
+    "fields": {
+        "band": "Dar Williams",
+        "album": "Cry, Cry, Cry"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 21,
+    "fields": {
+        "band": "Rusted Root",
+        "album": "When I Woke"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 22,
+    "fields": {
+        "band": "Paul Simon",
+        "album": "Graceland"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 23,
+    "fields": {
+        "band": "Kasey Chambers",
+        "album": "Barricades & Brickwalls"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 24,
+    "fields": {
+        "band": "Black Eyed Peas",
+        "album": "Monkey Business"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 25,
+    "fields": {
+        "band": "Billy Brag & Wilco",
+        "album": "Mermaid Avenue Vol I"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 26,
+    "fields": {
+        "band": "Joni Mitchell",
+        "album": "Blue"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 27,
+    "fields": {
+        "band": "Ani Difranco",
+        "album": "Little Plastic Castle"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 28,
+    "fields": {
+        "band": "Sade",
+        "album": "Lover's Rock"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 29,
+    "fields": {
+        "band": "Rachael Yamagata",
+        "album": "Happenstance"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 30,
+    "fields": {
+        "band": "Bjork",
+        "album": "Homogenic"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 31,
+    "fields": {
+        "band": "Jewel",
+        "album": "Pieces of You"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 33,
+    "fields": {
+        "band": "Hole",
+        "album": "Live Through This"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 34,
+    "fields": {
+        "band": "The Shins",
+        "album": "Oh Inverted World"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 35,
+    "fields": {
+        "band": "The Dave Brubeck Quintet",
+        "album": "Time Out"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 36,
+    "fields": {
+        "band": "Hem",
+        "album": "I'm Talking With My Mouth"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 37,
+    "fields": {
+        "band": "Taylor Swift",
+        "album": "Lover"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 38,
+    "fields": {
+        "band": "Pink Martini",
+        "album": "Joy To the World"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 39,
+    "fields": {
+        "band": "Beck",
+        "album": "Sea Change"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 40,
+    "fields": {
+        "band": "The Breeders",
+        "album": "Last Splash"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 41,
+    "fields": {
+        "band": "Dave Matthews Band",
+        "album": "Recently"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 42,
+    "fields": {
+        "band": "Ryan Adams",
+        "album": "Gold"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 43,
+    "fields": {
+        "band": "Rolling Stones",
+        "album": "Hot Rocks 1"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 44,
+    "fields": {
+        "band": "Dave Matthews Band",
+        "album": "Crash Into Me"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 45,
+    "fields": {
+        "band": "Jurassic 5",
+        "album": "Power In Numbers"
+    }
+},
+{
+    "model": "tracker.cd",
+    "pk": 46,
+    "fields": {
+        "band": "Tajmahal + Toumani Diabate",
+        "album": "Kulanjan"
+    }
+}
+]
