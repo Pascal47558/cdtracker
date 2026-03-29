@@ -21,9 +21,9 @@
             {% if CD.album != "" and CD.band != "" %}
                 <li><p><a href="{% url 'cd_view' CD.id  %}">{{CD.band}}: {{CD.album}}</a></p></li>
             {% elif CD.band != "" %}
-                <li><p><a>{{CD.band}}</a></p></li>
+                <li><p><a href="{% url 'cd_view' CD.id  %}">{{CD.band}}</a></p></li>
             {% elif CD.album != "" %}
-                <li><p><a>{{CD.album}}</a></p></li>
+                <li><p><a href="{% url 'cd_view' CD.id  %}">{{CD.album}}</a></p></li>
             {% endif %}
         {% empty %}
             <li>No CDs found</li>
