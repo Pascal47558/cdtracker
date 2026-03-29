@@ -18,14 +18,24 @@
     <h2>CDs</h2>
     <ul id="CDs">
         {% for CD in CDs %}
-            {% if CD.album != "" and CD.band != "" %}
-                <li><p><a class="link-main-page" href="{% url 'cd_view' CD.id  %}">{{CD.band}}: {{CD.album}}</a></p></li>
-            {% elif CD.band != "" %}
-                <li><p><a class="link-main-page" href="{% url 'cd_view' CD.id  %}">{{CD.band}}</a></p></li>
-            {% elif CD.album != "" %}
-                <li><p><a class="link-main-page" href="{% url 'cd_view' CD.id  %}">{{CD.album}}</a></p></li>
+            {% if CD.other == "" %}
+                {% if CD.album != "" and CD.band != "" %}
+                    <li>{{CD.band}}: {{CD.album}}</li>
+                {% elif CD.band != "" %}
+                    <li>{{CD.band}}</li>
+                {% elif CD.album != "" %}
+                    <li>{{CD.album}}</li>
+                {% endif %}
+            {% else %}
+                {% if CD.album != "" and CD.band != "" %}
+                    <li><p><a class="link-main-page" href="{% url 'cd_view' CD.id  %}">{{CD.band}}: {{CD.album}}</a></p></li>
+                {% elif CD.band != "" %}
+                    <li><p><a class="link-main-page" href="{% url 'cd_view' CD.id  %}">{{CD.band}}</a></p></li>
+                {% elif CD.album != "" %}
+                    <li><p><a class="link-main-page" href="{% url 'cd_view' CD.id  %}">{{CD.album}}</a></p></li>
+                {% endif %}
             {% endif %}
-        {% empty %}
+            {% empty %}
             <li>No CDs found</li>
         {% endfor %}
     </ul>
