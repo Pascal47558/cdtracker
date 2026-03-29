@@ -11,7 +11,6 @@ class WebRequestTest(TestCase):
     def testMainPage(self):
         # Should uncoment this
         #response = self.client.get(reverse('index'))
-
         response = self.client.get(path = "/")
 
         self.assertEqual(response.status_code, 200)
