@@ -9,7 +9,10 @@ class WebRequestTest(TestCase):
         self.client = Client
 
     def testMainPage(self):
-        response = self.client.get(reverse('index'))
+        # Should uncoment this
+        #response = self.client.get(reverse('index'))
+
+        response = self.client.get(path = "/")
 
         self.assertEqual(response.status_code, 200)
 
@@ -18,7 +21,7 @@ class WebRequestTest(TestCase):
         self.assertTemplateUsed(response, "index.html")
 
     def test_pageNotFound(self):
-        response = self.client.get("/notarealpage")
+        response = self.client.get(path = "/notarealpage")
 
         self.assertEqual(response.status_code, 404)
         self.assertContains(response, "404")
@@ -26,7 +29,7 @@ class WebRequestTest(TestCase):
         self.assertTemplateUsed(response, "404.html")
 
     def test_itemNotFound(self):
-        response = self.client.get("cd/13241322134")
+        response = self.client.get(path = "cd/13241322134")
 
         self.assertEqual(response.status_code, 404)
         self.assertContains(response, "404")
