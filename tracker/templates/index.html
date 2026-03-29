@@ -18,7 +18,11 @@
     <h2>CDs</h2>
     <ul id="CDs">
         {% for CD in CDs %}
-            <li>{{CD.band}}: {{CD.album}}</li>
+            {% if CD.album != "" %}
+                <li>{{CD.band}}: {{CD.album}}</li>
+            {% else %}
+                <li>{{CD.band}}</li>
+            {% endif %}
         {% empty %}
             <li>No CDs found</li>
         {% endfor %}
