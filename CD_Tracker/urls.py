@@ -25,4 +25,5 @@ urlpatterns = [
     path("", views.index, name="index"),
     path("new/", views.NewCD, name="NewCD"),
     path("search/", views.search, name="search"),
+    path('cd/<int:id>/', views.cd_view, name='cd_view'),
 ] + debug_toolbar_urls()

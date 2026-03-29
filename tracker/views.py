@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 
 from .models import CD
 from .forms import CD_Form
@@ -33,3 +33,7 @@ def search(request):
             Q(band__icontains=query) | Q(album__icontains=query)
         ).distinct()
     return render(request, 'index.html', {'CDs': results, 'query': query})
+
+def cd_view(request, id):
+    obj = get_object_or_404(CD, id=id)
+    return render(request, 'detail.html', {'CD': obj})

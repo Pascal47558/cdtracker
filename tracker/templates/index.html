@@ -19,11 +19,11 @@
     <ul id="CDs">
         {% for CD in CDs %}
             {% if CD.album != "" and CD.band != "" %}
-                <li>{{CD.band}}: {{CD.album}}</li>
+                <li><p><a href="{% url 'cd_view' CD.id  %}">{{CD.band}}: {{CD.album}}</a></p></li>
             {% elif CD.band != "" %}
-                <li>{{CD.band}}</li>
+                <li><p><a>{{CD.band}}</a></p></li>
             {% elif CD.album != "" %}
-                <li>{{CD.album}}</li>
+                <li><p><a>{{CD.album}}</a></p></li>
             {% endif %}
         {% empty %}
             <li>No CDs found</li>
