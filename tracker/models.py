@@ -6,6 +6,9 @@ class CD(models.Model):
     album = models.CharField(max_length=128, blank=True)
     #other = models.CharField(max_length=512, null=True)
 
+    def __str__(self):
+        return self.album
+
     class Meta:
         constraints = [
             models.UniqueConstraint(
