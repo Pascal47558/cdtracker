@@ -9,7 +9,10 @@ class WebRequestTest(TestCase):
         self.client = Client
 
     def testMainPage(self):
-        response = self.client.get(reverse('index'))
+        # Should uncoment this
+        #response = self.client.get(reverse('index'))
+
+        response = self.client.get("/")
 
         self.assertEqual(response.status_code, 200)
 

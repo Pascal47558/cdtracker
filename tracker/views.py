@@ -3,7 +3,8 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import CD
 from .forms import CD_Form
 from django.db.models import Q
-# Create your views here.
+
+
 def index(request):
     CDs = CD.objects.order_by("band")
     context = {'CDs': CDs,}
