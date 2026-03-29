@@ -53,6 +53,9 @@ MIDDLEWARE = [
 
     # Default
     'django.middleware.security.SecurityMiddleware',
+    # User added
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+    # Default
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -126,7 +129,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -139,3 +143,4 @@ INTERNAL_IPS = [
     "127.0.0.1",
     "192.168.86.232",
 ]
+
