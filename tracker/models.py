@@ -10,7 +10,7 @@ class Group(models.Model):
 class CD(models.Model):
     band = models.CharField(max_length=64,  blank=True)
     album = models.CharField(max_length=64, blank=True)
-    other = models.CharField(max_length=256, blank=True, null=True)
+    other = models.CharField(max_length=256, blank=True)
 
     groups = models.ManyToManyField(Group, blank=True, null=True)
 
