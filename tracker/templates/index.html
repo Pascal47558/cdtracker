@@ -28,11 +28,11 @@
                 {% endif %}
             {% else %}
                 {% if CD.album != "" and CD.band != "" %}
-                    <li><p><a class="link-main-page" href="{% url 'cd_view' CD.id  %}">{{CD.band}}: {{CD.album}}</a></p></li>
+                    <li><a class="link-main-page" href="{% url 'cd_view' CD.id  %}">{{CD.band}}: {{CD.album}}</a></li>
                 {% elif CD.band != "" %}
-                    <li><p><a class="link-main-page" href="{% url 'cd_view' CD.id  %}">{{CD.band}}</a></p></li>
+                    <li><a class="link-main-page" href="{% url 'cd_view' CD.id  %}">{{CD.band}}</a></li>
                 {% elif CD.album != "" %}
-                    <li><p><a class="link-main-page" href="{% url 'cd_view' CD.id  %}">{{CD.album}}</a></p></li>
+                    <li><a class="link-main-page" href="{% url 'cd_view' CD.id  %}">{{CD.album}}</a></li>
                 {% endif %}
             {% endif %}
             {% empty %}
