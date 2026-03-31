@@ -5,7 +5,7 @@ from .models import CD
 
 # Create your tests here.
 class WebRequestTest(TestCase):
-    fixtures = ['mydata.json']
+    fixtures = ['data.json']
 
     def setUp(self):
         self.client = Client()
