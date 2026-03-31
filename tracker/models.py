@@ -12,7 +12,7 @@ class CD(models.Model):
     album = models.CharField(max_length=64, blank=True)
     other = models.CharField(max_length=256, blank=True)
 
-    groups = models.ManyToManyField(Group, blank=True, null=True)
+    groups = models.ManyToManyField(Group, blank=True)
 
     def __str__(self):
         if "".join([group.name for group in self.groups.all()]) != "":
