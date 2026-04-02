@@ -1,4 +1,4 @@
-cd /home/chipbort/cdtracker
+cd ~/cdtracker
 
 git pull
 

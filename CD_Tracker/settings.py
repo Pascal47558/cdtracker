@@ -33,6 +33,7 @@ ALLOWED_HOSTS = [
     "fuzzbert",
     "192.168.86.43",
     "localhost",
+    "192.168.86.47",
 ]
 
 
