@@ -2,3 +2,6 @@
 *db*
 */migrations
 */__pycache__/*
+CD_Tracker/settings.py
+CD_Tracker/Settings.py
+*staticfiles*

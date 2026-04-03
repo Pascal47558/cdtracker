@@ -1,8 +1,4 @@
-if $1="1"; then
-    cd ~/cdtracker
-else
-    cd /home/rowan/cdtracker
-fi
+cd /home/rowan/cdtracker
 
 git pull
 
