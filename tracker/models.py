@@ -16,7 +16,7 @@ class CD(models.Model):
 
     def __str__(self):
         if "".join([group.name for group in self.groups.all()]) != "":
-            return self.band + ": " + self.album + " --- " + ", " "".join([group.name for group in self.groups.all()])
+            return self.band + ": " + self.album + " --- " + ", " "".join([group.name for group in self.groups.all()]).replace("regular", "")
         else:
             return self.band + ": " + self.album
 
